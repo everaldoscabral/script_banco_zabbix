@@ -3,8 +3,11 @@
 Esse script realiza o backup do schema do banco bem como backup do banco do Zabbix mas ignorando as maiores tabelas.
 
 git clone https://github.com/everaldoscabral/script_banco_zabbix.git
+
 cd script_banco_zabbix/
+
 chmod +x script_banco_zabbix.sh
+
 ./script_banco_zabbix.sh
 
 Após finalizar o processo de backup, caso queira testar o restore do schema e do banco:
