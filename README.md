@@ -12,8 +12,8 @@ chmod +x script_banco_zabbix.sh
 ```
 Após finalizar o processo de backup, caso queira testar o restore do schema e do banco:
 
-# Restaurando o banco do Zabbix #
-sudo gunzip < ARQUIVO-config.sql.gz | sudo mysql -u USUARIO -pSENHA BANCO_DE_RESTORE
-
 # Restaurando o schema do banco do Zabbix #
 sudo gunzip < ARQUIVO-schema.sql.gz | sudo mysql -u USUARIO -pSENHA BANCO_DE_RESTORE
+
+# Restaurando o banco do Zabbix #
+sudo gunzip < ARQUIVO-config.sql.gz | sudo mysql -u USUARIO -pSENHA BANCO_DE_RESTORE
