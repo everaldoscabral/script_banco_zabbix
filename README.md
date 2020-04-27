@@ -5,7 +5,9 @@ Esse script realiza o backup do schema do banco bem como backup do banco do Zabb
 # Editar os seguintes campos no script:
 
 DBNAME=NOME_DO_BANCO_ZABBIX
+
 DBUSER=USUARIO_DO_BANCO
+
 DBPASS=SENHA_DO_BANCO
 
 BK_DEST=DESTINO_DOS_ARQUIVOS
