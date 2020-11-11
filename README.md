@@ -28,7 +28,7 @@ dos2unix script_banco_zabbix.sh
 Após finalizar o processo de backup, caso queira testar o restore do schema e do banco:
 
 # Restaurando o schema do banco do Zabbix #
-sudo gunzip < ARQUIVO-schema.sql.gz | sudo mysql -u USUARIO -pSENHA BANCO_DE_RESTORE
+sudo gunzip < ARQUIVO-schema.sql.gz | sudo mysql -u USUARIO -p NOME DO BANCO
 
 # Restaurando o banco do Zabbix #
-sudo gunzip < ARQUIVO-config.sql.gz | sudo mysql -u USUARIO -pSENHA BANCO_DE_RESTORE
+sudo gunzip < ARQUIVO-config.sql.gz | sudo mysql -u USUARIO -p NOME DO BANCO
