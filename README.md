@@ -32,3 +32,13 @@ sudo gunzip < ARQUIVO-schema.sql.gz | sudo mysql -u USUARIO -p NOME DO BANCO
 
 # Restaurando o banco do Zabbix #
 sudo gunzip < ARQUIVO-config.sql.gz | sudo mysql -u USUARIO -p NOME DO BANCO
+
+# Sugestão #
+
+Antes de importar o backup:
+
+SET GLOBAL foreign_key_checks=0;
+
+Depois que terminar a importação:
+
+SET GLOBAL foreign_key_checks=1;
