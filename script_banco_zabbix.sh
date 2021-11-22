@@ -11,7 +11,7 @@ BK_DEST=DESTINO_DOS_ARQUIVOS
 sudo mysqldump --no-data --single-transaction -u$DBUSER -p"$DBPASS" "$DBNAME" | /bin/gzip > "$BK_DEST/$DBNAME-`date +%Y-%m-%d`-schema.sql.gz"
 
 ##REALIZANDO BACKUP DO BANCO ZABBIX IGNORANDO AS MAIORES TABELAS###
-sudo mysqldump -u"$DBUSER"  -p"$DBPASS" "$DBNAME" --single-transaction --skip-lock-tables --no-create-info --no-create-db \
+sudo mysqldump -u"$DBUSER"  -p"$DBPASS" "$DBNAME" --single-transaction --skip-lock-tables --routines --no-create-info --no-create-db \
     --ignore-table="$DBNAME.acknowledges" \
     --ignore-table="$DBNAME.alerts" \
     --ignore-table="$DBNAME.auditlog" \
